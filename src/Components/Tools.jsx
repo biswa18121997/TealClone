@@ -154,7 +154,7 @@ export default function Tools() {
   ];
 
   return (
-    <div className="container md:grid md:grid-cols-3 mx-auto p-4 max-w-md group-hover:flex items-center bg-gray-100 rounded-lg mb-2 absolute left-52 hidden w-1/2 h-[30vh] group-hover:visible hover:bg-gray-200 top-20">
+    <div className="container md:grid md:grid-cols-3 mx-auto p-4 max-w-[70vw] group-hover:flex items-center bg-gray-100  rounded-lg mb-2 absolute left-52 hidden w-1/2 h-[30vh] group-hover:visible hover:bg-gray-200 top-20">
       {navItems.map((item, index) => (
         <NavItem key={index} icon={item.icon} title={item.title} description={item.description} />
       ))}

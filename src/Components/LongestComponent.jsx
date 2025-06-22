@@ -57,17 +57,17 @@ export default function LongestComponent() {
 ];
   return (
     <section className="w-full py-16 px-4 bg-[linear-gradient(to_left,rgb(59,7,0)_40%,white_60%)]">
-      <div className="grid md:grid-cols-2 grid-rows-5 gap-12 max-w-6xl mx-auto items-center">
+      <div className="grid md:grid-cols-2 grid-rows-5 gap-6 max-w-6xl mx-auto items-center">
         {features.map((feature) => (
           <React.Fragment key={feature.id}>
-            <div className="flex flex-col gap-6">
-              <span className="text-sm text-gray-500 uppercase tracking-wide">
+            <div className="flex flex-col gap-8">
+              <span className="text-lg text-gray-500 uppercase tracking-wide">
                 {feature?.label}
               </span>
-              <h2 className="text-3xl font-bold text-gray-900">
+              <h2 className="text-4xl font-bold text-gray-900">
                 {feature?.title}
               </h2>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-lg font-semibold leading-relaxed">
                 {feature?.description}
               </p>
               <button className="w-fit px-6 py-2 bg-yellow-400 hover:bg-yellow-500 text-sm font-semibold rounded-lg">
