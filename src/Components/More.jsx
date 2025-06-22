@@ -92,7 +92,6 @@ export default function More() {
         onMouseLeave={() => setIsDropdownVisible(false)}
         className="px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-md"
       >
-        Career Resources
       </button>
       <CareerResourcesDropdown className={isDropdownVisible ? "block" : "hidden"} />
     </div>
