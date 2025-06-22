@@ -1,6 +1,9 @@
-import React from 'react';
 
 export default function FirstComponent () {
+
+
+
+  
   return (
     <section className="flex flex-col items-center justify-center h-[50vh] text-center px-4 py-16 bg-white">
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">

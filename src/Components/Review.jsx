@@ -1,8 +1,8 @@
-import React from "react";
-
-
 
 export default function Review () {
+
+
+  
     const testimonials = [
   {
     name: "Gratshan Burgholar",
@@ -83,7 +83,6 @@ export default function Review () {
         <span className="text-black">★ Trustpilot</span>
       </p>
 
-      {/* Highlighted Review */}
       <div className=" justify-between items-center flex w-[90vw] mx-auto p-16 bg-green-900 text-white md:p-10 rounded-lg mb-12 relative">
         <div className="text-xl font-medium p-10 w-4/5 ">
           {
@@ -115,7 +114,6 @@ export default function Review () {
         </div>
       </div>
 
-      {/* Grid of Other Reviews */}
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4 max-w-6xl mx-auto">
         {testimonials
           .filter((t) => !t.highlight)
@@ -141,7 +139,6 @@ export default function Review () {
           ))}
       </div>
 
-      {/* CTA Button */}
       <button className="mt-10 px-6 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold shadow-md">
         Upload Your Resume Now
       </button>

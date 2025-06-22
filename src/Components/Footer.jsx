@@ -1,6 +1,10 @@
-import React from 'react';
 
-const footerItems = [
+
+
+
+const Footer = () => {
+
+    const footerItems = [
   { title: 'Tools', items: ['AI Resume Builder', 'Job Application Tracker', 'Resume Checker', 'Cover Letter Generator', 'Resume Summary Generator', 'Resume Job Description Match', 'Resume Bullet Point Generator'] },
   { title: 'Career Hubs', items: ['Career Hub', 'Career Paths', 'Resume Examples', 'Resume Templates', 'Cover Letter Examples', 'Cover Letter Templates', 'Resume Synonyms', 'CV Examples'] },
   { title: 'Guides', items: ['ChatGPT for Resumes', 'ChatGPT for Cover Letters', 'How to Make a Resume', 'About Me in Resume', 'Resume Summary Examples', 'Resume Skills Section', 'Resume Accomplishments', 'Job Board'] },
@@ -15,15 +19,10 @@ const footerItems = [
   { icon: 'fa-brands fa-instagram', link: '#' },
   { icon: 'fa-brands fa-iwitter', link: '#' },
 ];
-
-
-const Footer = () => {
   return (
     <footer className="bg-maroon-900 text-maroon-200  font-sans w-full">
       <div className="  p-8 flex flex-wrap justify-between bg-pink-800 rounded-t-4xl w-full">
-        {/* <div className="mb-12"> */}
           <img src="/Screenshot 2025-06-22 092317.png" alt="Teal Labs Logo" className="w-[8vw] h-[12vh] mb-4 rounded-full clip mr-7" />
-        {/* </div> */}
         {footerItems.map((section, index) => (
           <div key={index} className="mb-6 min-w-[150px] flex-1">
             <h3 className="text-neutral-300 text-xl mb-2">{section.title}</h3>

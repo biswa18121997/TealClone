@@ -61,7 +61,6 @@ export default function Navbar() {
 
   return (
     <nav className="flex items-center justify-around p-2 sticky top-0 bg-white shadow z-50 max-w-[100vw] h-[10vh]">
-      {/* Logo */}
       <div className="flex items-center m-5 mr-52">
         <img
           src="https://cdn.prod.website-files.com/62775a91cc3db44c787149de/62775d8abf9f57629c567a0a_Group%201148.svg"
@@ -70,14 +69,12 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Hamburger - Mobile */}
       <div className="md:hidden pr-4">
         <button onClick={() => setNavVisibility(!navVisibility)}>
           <i className="fa-solid fa-bars text-2xl text-gray-700"></i>
         </button>
       </div>
 
-      {/* Nav Links */}
       <div className={`flex-col md:flex-row md:flex space-y-4 md:space-y-0 md:space-x-6 absolute md:static bg-white w-full left-0 top-[70px] md:top-auto px-6 md:px-0 ${navVisibility ? 'flex' : 'hidden'}`}>
         {navLinks.map((link, index) => (
           <h1
@@ -104,7 +101,6 @@ export default function Navbar() {
         ))}
       </div>
 
-      {/* Buttons */}
       <div className="hidden md:flex space-x-4 pr-8">
         <button className="px-8 py-2 bg-yellow-400 text-white rounded-full hover:bg-yellow-500 hover:text-gray-700">
           Sign up

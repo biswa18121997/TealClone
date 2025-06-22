@@ -1,6 +1,8 @@
 
 
 export default function MatchingMode() {
+
+  
   const jobDetails = [
     { key: 'title', text: 'Senior Marketing Manager', icon: '✓', color: 'text-green-400' },
     { key: 'date', text: '07/2023 - Present' },

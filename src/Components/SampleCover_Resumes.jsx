@@ -3,7 +3,6 @@ import  { useEffect, useState } from "react";
 export default function SampleCover_Resumes () {
   const [activeTab, setActiveTab] = useState("Cover Letters");
 
-  // Sample image paths (replace with real URLs or imports)
   const coverLetterContent = {
     heading : 'Professionally Designed Cover Letter Templates',
     subheading : ' 100+ free templates with dozens of different themes and formats.' ,
@@ -37,7 +36,6 @@ useEffect(()=>{
 
   return (
     <div className="bg-[#FBD45D] py-12 px-4 text-center min-h-screen">
-      {/* Title */}
       <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
         {getActiveImages().heading}
       </h2>
@@ -48,7 +46,6 @@ useEffect(()=>{
         {getActiveImages().buttonText}
       </button>
 
-      {/* Tabs */}
       <div className="flex justify-center gap-2 mt-6 text-sm font-medium text-gray-800">
         {["Resumes", "Cover Letters"].map((tab) => (
           <button
@@ -65,7 +62,6 @@ useEffect(()=>{
         ))}
       </div>
 
-      {/* Image grid */}
       <div className="flex justify-center flex-wrap gap-6  ">
         {getActiveImages()?.images?.map((src, index) => (
             <div className="group mt-2"> 
@@ -82,7 +78,6 @@ useEffect(()=>{
         ))}
       </div>
 
-      {/* Pagination dots */}
       <div className="flex justify-center  gap-2">
         {[0, 1, 2].map((i) => (
           <div

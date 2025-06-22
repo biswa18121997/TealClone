@@ -1,4 +1,3 @@
-// FilterTabs.tsx
 import React, { useState } from "react";
 
 export default function FilterTabs() {

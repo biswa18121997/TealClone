@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const CoverLetter_Resume_CV = () => {
   const [activeTab, setActiveTab] = useState("Cover Letters");
@@ -82,7 +82,6 @@ const CoverLetter_Resume_CV = () => {
         </button>
       </div>
 
-      {/* Tabs */}
       <div className="flex justify-center gap-6 mt-8 mb-6 text-white text-sm font-medium">
         {tabs.map((tab) => (
           <button
@@ -99,7 +98,6 @@ const CoverLetter_Resume_CV = () => {
         ))}
       </div>
 
-      {/* Card container */}
       <div className="bg-white max-w-6xl mx-auto rounded-[30px] p-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 shadow-md">
         {getActiveList().map((item, index) => (
           <div

@@ -1,18 +1,16 @@
-// HeroSection.tsx
 
 import React,{ useEffect } from "react";
 import AOS from "aos";
-// ...other imports...
-
-
-
 
 
 
 export default function LongestComponent() {
 
+
+
+
   useEffect(() => {
-  AOS.init({ duration: 1000 }); // duration in ms
+  AOS.init({ duration: 500 }); 
 }, []);
     const features = [
     {
